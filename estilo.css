@@ -1,0 +1,616 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --cor-primaria-light: #505C7C;
+    --cor-primaria-dark: #282E3C;
+    --cor-secundaria-light: #FF4A4A;
+    --cor-secundaria-dark: #960000;
+    --cor-terciaria-light: #787A7A;
+    --cor-terciaria-dark: #242424;
+    --cor-preto: black;
+    --cor-branco: white;
+    --fonte: 'Roboto', arial, sans-serif;
+}
+body{
+    font-family: var(--fonte);
+}
+header{
+    background-color: var(--cor-primaria-light);
+    color: var(--cor-branco);
+    background-image: url(imagens/logo1.png), url(imagens/sociais.png);
+    border-bottom: var(--cor-primaria-dark) solid 50px;
+    padding-bottom: 60px;
+    background-repeat: no-repeat;
+    background-size: 500px, 200px;
+    background-position: 20px, 98% 87px;
+}
+.header-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-top h3{
+    justify-content: start;
+    background-color: var(--cor-primaria-dark);
+    width: 50%;
+    height: 25px;
+    border-radius: 90px;
+    margin-left: 610px;
+    padding-top: 2px;
+    font-weight: 100;
+    font-size: 15px;
+    letter-spacing: 1px;
+    display: flex;
+    padding-left: 20px;
+    margin-top: 40px;
+    
+}
+.header-top h1{
+    font-size: 1px;
+    color: var(--cor-primaria-light);
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.navbar a{
+    color: #fff;
+    text-decoration: none;
+    margin: 0 25px;
+    font-weight: bold;
+    position: relative;
+    top: 107px;
+    font-size: 20px;
+}
+.navbar .menu #fale{
+    background-color: var(--cor-branco);
+    border-radius: 90px;
+    color: var(--cor-preto);
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.8;
+    width: 160px;
+}
+.container{
+    display:flex;
+    width:100%;
+    gap:20px;
+    padding:20px;
+}
+.container .esquerda{
+    height:60%;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+    margin-top:50px;
+   
+}
+.container .esquerda #escavadeira{
+    width:100%;
+    border-radius:20px;
+    grid-column:1/3;
+    grid-row:1/2;
+}
+.container .esquerda #vacina{
+    width:300px;
+    grid-column:1/2;
+    grid-row:2/3;
+}
+.container .esquerda .texto h1{
+    font-size:22px;
+    text-align: justify;
+}
+.container .esquerda .texto p{
+    font-size: 14px;
+    text-align: justify;
+    margin-top: 10px;
+}
+.container .esquerda .texto #botao{
+    width: 120px;
+    margin-left: 180px;
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: var(--cor-primaria-dark);
+    color:white;
+    border:none;
+}
+.container .esquerda .texto a{
+    color:white;
+    text-decoration:none;
+}
+.container .direita{
+    width:100%;
+}
+.container .direita ul{
+    min-height:670px;
+    gap:20px;
+    font-size:16px;
+    text-align:center;
+    margin-top:50px;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "acesso acesso"
+    "agenda turismo"
+    "info edu"
+    "segu cada"
+    "secre saude"
+    "mostra mostra"
+}
+.container .direita .red{
+    background-color:var(--cor-secundaria-dark);
+    color:white;
+    display:grid;
+    align-items:center;
+    font-weight: bold;
+}
+.container .direita .claro{
+   
+    background-color: #FFC6C6;
+    color: var(--cor-secundaria-dark);
+    display:grid;
+    align-items:center;
+    font-weight: bold;
+}
+.container .direita #acesso{
+    grid-area:acesso;
+}
+.container .direita #agenda{
+    grid-area:agenda;
+}
+.container .direita #turismo{
+    grid-area:turismo;
+}
+.container .direita #info{
+    grid-area:info;
+}
+.container .direita #edu{
+    grid-area:edu;
+}
+.container .direita #segu{
+    grid-area:segu;
+}
+.container .direita #cada{
+    grid-area:cada;
+}
+.container .direita #secre{
+    grid-area:secre;
+}
+.container .direita #saude{
+    grid-area:saude;
+}
+.container .direita #mostra{
+    grid-area:mostra;
+}
+.seis{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+    margin:20px 50px 50px 50px;
+}
+#tituloseis{
+    border-left:var(--cor-secundaria-dark) 5px solid;
+    margin-left:50px;
+    padding:10px;
+}
+#tituloseis h1{
+    margin-right:30px;
+}
+#tituloseis h2{
+    text-decoration:underline gray 2px;
+    color:white;
+}
+#tituloseis h2 strong{
+    text-decoration:none;
+    color: #9B0000;
+    font-size:12px;
+    text-decoration:none;
+}
+.seis .parte{
+    padding:20px;
+    font-size:12px;
+    display:grid;
+    place-items:center;
+    width: 30%;
+    background-color:lightgray;
+    border-top: var(--cor-secundaria-dark) solid 5px;
+    border-radius:20px;
+    box-shadow:black 2px 2px 2px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+#titulonoticias{
+    margin-top:50px;
+    border-left:var(--cor-secundaria-dark) solid 5px;
+    margin-left:50px;
+    display:flex;
+}
+#titulonoticias h1{
+    margin-right:30px;
+}
+#titulonoticias h2{
+    color:white;
+    text-decoration:underline gray 2px;
+}
+#titulonoticias h2 strong{
+    color: var(--cor-secundaria-dark);
+    font-size:12px;
+}
+.noticias #noticia1{
+    background-color:lightgray;
+    display:flex;
+    margin: 50px;
+    border-radius:20px;
+    height:420px;
+}
+.noticias #noticia1 h1{
+    margin-bottom:30px;
+    text-align: justify;
+    margin-left: 2px;
+}
+.noticias #noticia1 p{
+    font-size:20px;
+    text-align: justify;
+    margin-left: 3px;
+}
+.noticias #noticia2{
+    background-color:lightgray;
+    margin:50px;
+    display:flex;
+    border-radius:20px;
+}
+.noticias #noticia2 h1{
+    margin-bottom:30px;
+    text-align: justify;
+    margin-left: 6px;
+}
+.noticias #noticia2 p{
+    font-size:26px;
+    text-align: justify;
+    margin-left: 6px;
+}
+.titulo{
+    font-weight: bolder;
+    margin-bottom: 180px;
+}
+.footer{
+    background-color: var(--cor-primaria-light);
+    color: #fff;
+    border-top: 50px var(--cor-primaria-dark) solid;
+    height: 650px;
+    padding: 20px 0;
+    background-image: url(imagens/logo2.png), url(imagens/sociais.png);
+    background-repeat: no-repeat;
+    background-size: 300px, 150px;
+    background-position: 10px 100%, 100% 95%;
+}
+.footer-coluna{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0 100px;
+}
+.footer-coluna .coluna{
+    margin: 10px;
+    flex: 1;
+    min-width: 200px;
+}
+.footer-coluna ul{
+    list-style: none;
+    padding: 0px;
+}
+.footer-coluna ul li{
+    margin: 5px 0;
+    line-height: 40px;
+}
+.footer-coluna ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+.copyright{
+    text-align: end;
+    margin-top: 245px;
+    font-size: 0.8em;
+}
+.navbar li a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+menu{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+@media(width <= 1024px){
+    .header-top h3{
+        margin-top: 40px;
+        margin-left: 45%;
+    }
+    .seis{
+        display:flex;
+        flex-wrap:wrap;
+        gap: 2px;
+    }
+}
+@media(width <= 768px){
+    .header{
+        width: 100%;
+        background-size: 300px, 170px;
+        background-position: 10px 20px, 98% 73px;
+    }
+    .navbar .menu a{
+        margin: 0 16px;
+        font-size: 17px;
+    }
+    .navbar .menu #fale{
+        font-size: 12px;
+        line-height: 1.8;
+        width: 140px;
+    }
+    .container .esquerda #escavadeira{
+        width:100%;
+        border-radius:20px;
+        grid-column:1/3;
+        grid-row:1/2;
+    }
+    .container .esquerda #vacina{
+        width:90%;
+        grid-column:1/2;
+        grid-row:2/3;
+    }
+    .container .esquerda .texto h1{
+        font-size: 14px;
+        text-align: justify;
+    }
+    .container .esquerda .texto p{
+        font-size:12px;
+        text-align: justify;
+    }
+    #tituloseis h2{
+        font-size: 0px;
+    }
+    .seis .parte{
+        height: 200px;
+        font-size: 8px;
+    }
+    #titulonoticias h2{
+        font-size: 0px;
+    }
+    .noticias #noticia1{
+        width: 700px;
+        height: 300px;
+    }
+    .noticias #noticia1 img{
+        width: 60%;
+        height: 100%;
+    }
+    .noticias #noticia1 #texto h1{
+        font-size: 20px;
+    }
+    .noticias #noticia1 #texto p{
+        font-size: 19px;
+    }
+    .noticias #noticia2{
+        width: 700px;
+        height: 200px;
+    }
+    .noticias #noticia2 img{
+        width: 60%;
+        height: 100%;
+    }
+    .noticias #noticia2 #texto h1{
+        font-size: 20px;
+    }
+    .noticias #noticia2 #texto p{
+        font-size: 19px;
+    }
+    .footer{
+        height: 500px;
+        background-size: 250px, 150px;
+        background-position: 10px 95%, 100% 93%;
+    }
+    .footer-coluna{
+        display: flex;
+        flex-wrap: nowrap;
+        font-size: 15px;
+    }
+    .copyright{
+        display: flex;
+        text-align: end;
+        margin-top: 90px;
+        font-size: 0.8em;
+        margin-left: 86px;
+    }
+}
+@media(width < 882px){
+    .container{
+        flex-direction: column;
+    }
+    .esquerda{
+        grid-template-areas: 'escavadeira vacina'
+                             'escavadeira texto';
+    }
+    .container .esquerda #escavadeira{
+        width: 100%;
+        height: 90%;
+        border-radius: 20px;
+        grid-area: escavadeira;
+    }
+    .container .esquerda #vacina{
+        width: 100%;
+        grid-area: vacina;
+    }
+    .container .esquerda .texto h1{
+        font-size: 17px;
+        text-align: justify;
+        margin-right: 20px;
+    }
+    .container .esquerda .texto{
+        grid-area: texto;
+    }
+    .container .esquerda .texto p{
+        margin-right: 20px;
+        font-size: 12px;
+    }
+}
+@media(width <= 425px){
+    .header{
+        width: 426px;
+        background-size: 200px, 100px;
+        background-position: 10px 20px, 98% 73px;
+    }
+    .header-top h3{
+        width: 200px;
+        height: 20px;
+        font-size: 13px;
+        margin-left: 200px;
+        padding-top: 2px;
+        display: flex;
+        margin-top: 46px;
+        padding-left: 2px;
+    }
+    .navbar .menu a{
+        margin: 0 7px;
+        font-size: 10px;
+    }
+    .navbar .menu #fale{
+        font-size: 7px;
+        line-height: 1.8;
+        width: 70px;
+    }
+    .esquerda{
+        grid-template-areas: 'escavadeira escavadeira'
+                             'vacina texto';
+    }
+    .container .esquerda #escavadeira{
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        grid-column: 1/3;
+        grid-row: 1/2;
+        grid-area: escavadeira;
+    }
+    .container .esquerda #vacina{
+        width: 300%;
+        height: 100%;
+        grid-column: 1/2;
+        grid-row: 2/3;
+        grid-area: vacina;
+    }
+    .container .esquerda .texto h1{
+        font-size: 14px;
+        text-align: justify;
+        margin-left: 130px;
+    }
+    .container .esquerda .texto p{
+        font-size:12px;
+        text-align: justify;
+        margin-left: 130px;
+    }
+    .container .direita ul{
+        min-height: 370px;
+        gap: 15px;
+        font-size: 15px;
+        text-align: center;
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #tituloseis h2{
+        font-size: 0px;
+    }
+    #tituloseis h1{
+        font-size: 15px;
+    }
+    .seis .parte{
+        width: 100px;
+        height: 90px;
+        font-size: 8px;
+    }
+    .seis .parte h1{
+        font-size: 8px;
+    }
+    .seis .parte img{
+        width: 40px;
+        height: 30px;
+        margin-top: 5px;
+    }
+    #titulonoticias h2{
+        font-size: 0px;
+    }
+    #titulonoticias h2 strong{
+        font-size: 10px;
+    }
+    #titulonoticias h1{
+        font-size: 16px;
+        margin-left: 10px;
+    }
+    .noticias #noticia1{
+        width: 350px;
+        height: 190px;
+    }
+    .noticias #noticia1 img{
+        width: 60%;
+        height: 100%;
+    }
+    .noticias #noticia1 #texto h1{
+        font-size: 12px;
+    }
+    .noticias #noticia1 #texto p{
+        font-size: 10px;
+    }
+    .noticias #noticia2{
+        width: 350px;
+        height: 160px;
+    }
+    .noticias #noticia2 img{
+        width: 60%;
+        height: 160px;
+    }
+    .noticias #noticia2 #texto h1{
+        font-size: 12px;
+    }
+    .noticias #noticia2 #texto p{
+        font-size: 10px;
+    }
+    .footer{
+        width: 426px;
+        height: 400px;
+        background-size: 150px, 100px;
+        background-position: 5px 94%, 100% 93%;
+    }
+    .footer-coluna{
+        display: flex;
+        flex-wrap: nowrap;
+        font-size: 9px;
+        justify-content: space-evenly;
+        padding: 0 200px;
+    }
+    .footer-coluna .coluna{
+        min-width: 100px;
+    }
+    .footer-coluna ul{
+        padding: auto;
+    }
+    .footer-coluna ul li{
+        margin: 0px 0;
+        line-height: 25px;
+    }
+    .copyright{
+        display: flex;
+        text-align: end;
+        margin-top: 67px;
+        font-size: 0.5em;
+        margin-left: 86px;
+    }
+}
+
+
